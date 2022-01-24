@@ -1,0 +1,12 @@
+{
+  "realm": "Demo-Realm",
+  "auth-server-url": "http://localhost:8080/auth/",
+  "ssl-required": "external",
+  "resource": "my-aplication",
+  "verify-token-audience": true,
+  "credentials": {
+    "secret": "e41d8542-e8bf-40b8-bd31-415a6fe3aa8f"
+  },
+  "confidential-port": 0,
+  "policy-enforcer": {}
+}

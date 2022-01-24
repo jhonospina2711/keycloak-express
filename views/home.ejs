@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>Keycloak Example</title>
+	</head>
+	<body>
+		<h1>Home</h1>
+		<%
+		try {
+			if (user) {
+		%>
+				<p><%= user.name %></p>
+			<% } else { %>
+				<p>Please Login</p>
+			<% } %>
+		<%
+		} catch (e) {
+			console.error('Error: ', e);
+			%>
+				<p>Please Login</p>
+		<% } %>
+	</body>
+</html>
